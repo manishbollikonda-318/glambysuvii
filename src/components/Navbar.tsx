@@ -50,24 +50,19 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20 items-center">
           
-          {/* Custom Luxury Logo Emblem & Branding */}
+          {/* Authentic Storefront Logo Image (unnamed-3.jpg) & Branding */}
           <button 
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} 
             className="flex items-center gap-3 text-left group cursor-pointer"
             aria-label="Glam By Suvii Home"
           >
-            {/* Custom Designed Luxury Salon Logo Badge */}
-            <div className="relative w-11 h-11 rounded-2xl bg-gradient-to-br from-primary via-emerald-500 to-secondary p-0.5 shadow-md shadow-primary/20 group-hover:scale-105 transition-transform duration-300">
-              <div className="w-full h-full bg-white rounded-[14px] flex items-center justify-center relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 to-secondary/10" />
-                {/* Elegant Glam Monogram Logo SVG */}
-                <svg className="w-7 h-7 text-primary" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M20 4L23.5 12.5L32 16L23.5 19.5L20 28L16.5 19.5L8 16L16.5 12.5L20 4Z" fill="currentColor" fillOpacity="0.2"/>
-                  <circle cx="20" cy="20" r="14" stroke="currentColor" strokeWidth="2.5" strokeDasharray="4 2"/>
-                  <text x="20" y="25" textAnchor="middle" fontSize="16" fontWeight="900" fontFamily="serif" fill="#1F2D24">G</text>
-                  <circle cx="28" cy="11" r="2.5" fill="#FF8BA7" />
-                </svg>
-              </div>
+            {/* Real Salon Logo Image */}
+            <div className="relative h-12 w-auto overflow-hidden rounded-xl bg-white p-1 border border-secondary/20 shadow-sm group-hover:scale-105 transition-transform duration-300">
+              <img 
+                src="/unnamed-3.jpg" 
+                alt="Glam By Suvii Unisex Salon Logo"
+                className="h-full w-auto object-contain rounded-lg"
+              />
             </div>
 
             <div className="flex flex-col">

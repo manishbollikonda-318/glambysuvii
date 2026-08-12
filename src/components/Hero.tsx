@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Phone, ArrowRight, Sparkles, Scissors, Star, MapPin } from 'lucide-react';
+import { Phone, ArrowRight, Sparkles, Star, MapPin } from 'lucide-react';
 
 export default function Hero() {
   const handleCall = async () => {
@@ -27,26 +27,32 @@ export default function Hero() {
           className="w-full h-full object-cover object-center scale-105 transform filter brightness-90"
         />
         {/* Sleek Dark & Translucent Blush Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/60 to-text-dark/90 backdrop-blur-[2px]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/65 to-text-dark/95 backdrop-blur-[2px]" />
         <div className="absolute inset-0 bg-radial from-secondary/20 via-transparent to-transparent opacity-60 pointer-events-none" />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full text-center">
         <div className="flex flex-col items-center max-w-4xl mx-auto">
           
-          {/* Prominent, Large Salon Business Branding */}
+          {/* Prominent, Large Salon Business Branding with Official Storefront Logo */}
           <motion.div 
             initial={{ opacity: 0, scale: 0.9, y: -20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="w-full max-w-xl mx-auto mb-6 p-4 sm:p-6 rounded-3xl bg-white/10 backdrop-blur-md border border-white/20 shadow-2xl"
+            className="w-full max-w-xl mx-auto mb-6 p-4 sm:p-6 rounded-3xl bg-white/10 backdrop-blur-md border border-white/20 shadow-2xl flex flex-col items-center"
           >
-            <div className="flex items-center justify-center gap-2 mb-2">
-              <Scissors className="w-7 h-7 sm:w-9 sm:h-9 text-primary animate-pulse" />
-              <div className="flex items-center gap-1 bg-amber-400/20 text-amber-300 px-3 py-1 rounded-full text-xs font-extrabold border border-amber-400/30">
-                <Star className="w-3.5 h-3.5 fill-amber-400" />
-                <span>4.9 Rated Salon</span>
-              </div>
+            {/* Official Logo Image (unnamed-3.jpg) */}
+            <div className="mb-3 p-2 bg-white rounded-2xl border border-white/40 shadow-lg inline-block">
+              <img 
+                src="/unnamed-3.jpg" 
+                alt="Glam By Suvii Storefront Logo" 
+                className="h-14 sm:h-16 w-auto object-contain rounded-xl"
+              />
+            </div>
+
+            <div className="flex items-center gap-1 bg-amber-400/20 text-amber-300 px-3 py-1 rounded-full text-xs font-extrabold border border-amber-400/30 mb-2">
+              <Star className="w-3.5 h-3.5 fill-amber-400" />
+              <span>4.9 Rated Unisex Salon</span>
             </div>
             
             {/* BIG BOLD BRANDING TITLE FOR MOBILE */}
